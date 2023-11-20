@@ -1,0 +1,138 @@
+/* Reset default margin and padding for the whole document */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply basic styling for the layout */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    color: #fff;
+    padding: 10px;
+    /* display: flex;
+    justify-content: flex-end; */
+    /* align-items: center; */
+}
+.top-icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:10px;
+    padding:10px;
+}
+.fa-bell,.fa-user{
+    width: 30px;
+    height: 30px;
+    font-size:1.5rem;
+    color:grey;
+   
+}
+
+h2 {
+    font-size: 24px;
+    bottom: 10px;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px;
+    /* width: calc(50% - 20px); */
+    width:10rem;
+    height:5rem;
+    border: 1px solid #ccc;
+    border-radius:5px;
+}
+.item p{
+    position: relative;
+    top:4rem;
+    left:0px;
+    font-size:1.2rem;
+    font-weight: bold;
+    color:#fff;
+}
+.color1,.color3{
+    background: blue;
+}
+.color2{
+    background: rgb(236, 9, 92);
+}
+.color4{
+    background: rgb(87, 83, 83);
+}
+.color5{
+    background: green;
+}
+/* footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.bottom-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+} */
+footer {
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.fa-s{
+    background-color: blue;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+}
+.bottom-icons i {
+    font-size: 20px;
+    margin: 0 10px;
+    color: grey;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .top-icons {
+        margin-bottom: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 80%;
+    }
+
+    footer {
+        text-align: center;
+    }
+    
+    .bottom-icons {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+

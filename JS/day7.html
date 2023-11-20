@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    button{
+       width: 80px;
+       border-radius: 10px;
+       padding: 10px;
+       font-weight: 600;
+
+    }
+</style>
+<body>
+    <button id="btn">click me</button>
+<script>
+  let btn = document.getElementById("btn");
+
+  btn.addEventListener('click', display);
+
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+
+  function display() {
+    for (let i = 0; i < 6; i++) {
+      let ran = Math.floor(Math.random() * 16);
+      color += letters[ran];
+    }
+
+    document.body.style.background = color;
+    color = '#';
+  }
+</script>
+
+<button id="incrementButton">Increment</button>
+<p>Counter: <span id="counter">0</span></p>
+
+<script>
+  // Get the necessary elements
+  const incrementButton = document.getElementById("incrementButton");
+  const counterElement = document.getElementById("counter");
+
+  // Initialize the counter variable
+  let counter = 0;
+
+  // Add a click event listener to the button
+  incrementButton.addEventListener("click", function () {
+    // Increment the counter
+    counter+=3;
+    // Update the counter display
+    counterElement.textContent = counter;
+  });
+</script>
+
+<button id="btn">click me</button>
+<script>
+
+    let btn = document.getElementById("btn")
+    btn.addEventListener('click',display)
+    var letters = '0123456789ABCDEF'
+    color='#'
+    function display(){
+        for(i=0;i<6;i++){
+            let ran = Math.floor(Math.random() * 16)
+            color+=letters[ran]
+        }
+        document.body.style.background = color
+        color='#'
+    }
+</script>
+
+</body>
+</html>

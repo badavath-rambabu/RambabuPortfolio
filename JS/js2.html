@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive side navbar</title>
+    <link rel="stylesheet" href="./js2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav>
+        <label class="logo">DesignX</label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+    
+            </label>
+    </nav>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let icon = document.querySelector("#icon");
+        let nav = document.querySelector("nav ul");
+    
+        icon.addEventListener('click', function() {
+            nav.classList.toggle("show");
+        });
+    });
+</script>
+    
+</body>
+</html>

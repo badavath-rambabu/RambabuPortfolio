@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="./js3.css">
+</head>
+<body>
+    <div class="Navbar">
+        <div class="Navbar__Link Navbar__Link-brand">
+           Website title
+         </div>
+         <div class="Navbar__Link Navbar__Link-toggle">
+           <i class="fas fa-bars"></i>
+         </div>
+       <nav class="Navbar__Items">
+         <div class="Navbar__Link">
+           Longer Link
+         </div>
+         <div class="Navbar__Link">
+           Longer Link
+         </div>
+         <div class="Navbar__Link">
+           Link
+         </div>
+       </nav>
+       <nav class="Navbar__Items Navbar__Items--right">
+         <div class="Navbar__Link">
+           Link
+         </div>
+         <div class="Navbar__Link">
+           Link
+         </div>
+       </nav>
+     </div>
+     <script>
+        function classToggle() {
+  const navs = document.querySelectorAll('.Navbar__Items')
+  
+  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+}
+
+document.querySelector('.Navbar__Link-toggle')
+  .addEventListener('click', classToggle);
+     </script>
+</body>
+</html>
